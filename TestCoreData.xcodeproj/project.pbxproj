@@ -14,6 +14,9 @@
 		437134C524F9535400D601EA /* TestCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 437134C324F9535400D601EA /* TestCoreData.xcdatamodeld */; };
 		437134C724F9535900D601EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 437134C624F9535900D601EA /* Assets.xcassets */; };
 		437134CA24F9535900D601EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 437134C824F9535900D601EA /* LaunchScreen.storyboard */; };
+		437134D224F9593900D601EA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437134D124F9593900D601EA /* Post.swift */; };
+		437134D424F959B400D601EA /* PostWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437134D324F959B400D601EA /* PostWebService.swift */; };
+		437134D624F9637A00D601EA /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437134D524F9637A00D601EA /* AddPostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		437134C624F9535900D601EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		437134C924F9535900D601EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		437134CB24F9535900D601EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		437134D124F9593900D601EA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		437134D324F959B400D601EA /* PostWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostWebService.swift; sourceTree = "<group>"; };
+		437134D524F9637A00D601EA /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,9 @@
 				437134BA24F9535400D601EA /* AppDelegate.swift */,
 				437134BC24F9535400D601EA /* SceneDelegate.swift */,
 				437134BE24F9535400D601EA /* ViewController.swift */,
+				437134D524F9637A00D601EA /* AddPostViewController.swift */,
+				437134D124F9593900D601EA /* Post.swift */,
+				437134D324F959B400D601EA /* PostWebService.swift */,
 				437134C024F9535400D601EA /* Main.storyboard */,
 				437134C624F9535900D601EA /* Assets.xcassets */,
 				437134C824F9535900D601EA /* LaunchScreen.storyboard */,
@@ -145,6 +154,9 @@
 				437134BF24F9535400D601EA /* ViewController.swift in Sources */,
 				437134BB24F9535400D601EA /* AppDelegate.swift in Sources */,
 				437134BD24F9535400D601EA /* SceneDelegate.swift in Sources */,
+				437134D424F959B400D601EA /* PostWebService.swift in Sources */,
+				437134D224F9593900D601EA /* Post.swift in Sources */,
+				437134D624F9637A00D601EA /* AddPostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
