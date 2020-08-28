@@ -56,7 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return (UIApplication.shared.delegate as! AppDelegate).persistentContainer
     }
     
-    static var viewContex: NSManagedObjectContext {
+    static var viewContext: NSManagedObjectContext {
         return persistentContainer.viewContext
     }
 

@@ -75,7 +75,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KZO-eW-SB0">
                                 <rect key="frame" x="70" y="127.5" width="324" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKY-t6-ijT">
                                 <rect key="frame" x="158" y="84" width="98" height="21"/>
@@ -86,7 +86,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BL9-9W-zqN">
                                 <rect key="frame" x="77" y="178.5" width="317" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQK-mq-Ebx">
                                 <rect key="frame" x="100" y="232.5" width="214" height="30"/>
@@ -109,23 +109,23 @@
                         </subviews>
                         <color key="backgroundColor" red="0.75294117650000003" green="0.76862745099999996" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="UQK-mq-Ebx" firstAttribute="top" secondItem="BL9-9W-zqN" secondAttribute="bottom" constant="20" id="3NS-MJ-klb"/>
-                            <constraint firstItem="KZO-eW-SB0" firstAttribute="centerY" secondItem="BdO-xt-WTI" secondAttribute="centerY" id="4TY-yM-nx6"/>
-                            <constraint firstItem="BL9-9W-zqN" firstAttribute="leading" secondItem="Mvi-lk-blT" secondAttribute="trailing" constant="8" id="6qE-Wc-IDf"/>
-                            <constraint firstItem="0hq-kC-z7P" firstAttribute="trailing" secondItem="UQK-mq-Ebx" secondAttribute="trailing" constant="100" id="8Eg-6d-fP9"/>
-                            <constraint firstItem="BdO-xt-WTI" firstAttribute="leading" secondItem="0hq-kC-z7P" secondAttribute="leading" constant="20" id="8Fj-w9-tA1"/>
-                            <constraint firstItem="0hq-kC-z7P" firstAttribute="trailing" secondItem="KZO-eW-SB0" secondAttribute="trailing" constant="20" id="FQZ-tw-Feb"/>
-                            <constraint firstItem="Mvi-lk-blT" firstAttribute="leading" secondItem="0hq-kC-z7P" secondAttribute="leading" constant="20" id="L3q-N8-sXr"/>
-                            <constraint firstItem="jBy-GB-MRd" firstAttribute="top" secondItem="0hq-kC-z7P" secondAttribute="top" constant="20" id="P8X-ca-bit"/>
-                            <constraint firstItem="BdO-xt-WTI" firstAttribute="top" secondItem="0hq-kC-z7P" secondAttribute="top" constant="90" id="ZZW-td-SHH"/>
-                            <constraint firstItem="TKY-t6-ijT" firstAttribute="top" secondItem="0hq-kC-z7P" secondAttribute="top" constant="40" id="bYg-fZ-6Py"/>
-                            <constraint firstItem="TKY-t6-ijT" firstAttribute="centerX" secondItem="uJc-wg-ajF" secondAttribute="centerX" id="dnl-R8-Kwm"/>
-                            <constraint firstItem="UQK-mq-Ebx" firstAttribute="leading" secondItem="0hq-kC-z7P" secondAttribute="leading" constant="100" id="l7X-Kk-fin"/>
-                            <constraint firstItem="KZO-eW-SB0" firstAttribute="leading" secondItem="BdO-xt-WTI" secondAttribute="trailing" constant="7" id="mc0-pB-spC"/>
-                            <constraint firstItem="0hq-kC-z7P" firstAttribute="trailing" secondItem="jBy-GB-MRd" secondAttribute="trailing" constant="20" id="nh4-Zx-ejs"/>
-                            <constraint firstItem="BL9-9W-zqN" firstAttribute="centerY" secondItem="Mvi-lk-blT" secondAttribute="centerY" id="qPQ-71-OOg"/>
-                            <constraint firstItem="Mvi-lk-blT" firstAttribute="top" secondItem="BdO-xt-WTI" secondAttribute="bottom" constant="30" id="rSC-Jx-ZcE"/>
-                            <constraint firstItem="0hq-kC-z7P" firstAttribute="trailing" secondItem="BL9-9W-zqN" secondAttribute="trailing" constant="20" id="tVD-f7-HHj"/>
+                            <constraint firstItem="jBy-GB-MRd" firstAttribute="trailing" secondItem="KZO-eW-SB0" secondAttribute="trailing" id="0NP-na-hA2"/>
+                            <constraint firstItem="TKY-t6-ijT" firstAttribute="top" secondItem="0hq-kC-z7P" secondAttribute="top" constant="40" id="1a0-1g-3D7"/>
+                            <constraint firstItem="jBy-GB-MRd" firstAttribute="top" secondItem="0hq-kC-z7P" secondAttribute="top" constant="20" id="3Tg-aB-7Bd"/>
+                            <constraint firstItem="BdO-xt-WTI" firstAttribute="centerY" secondItem="KZO-eW-SB0" secondAttribute="centerY" id="5Ha-al-iHR"/>
+                            <constraint firstItem="UQK-mq-Ebx" firstAttribute="leading" secondItem="0hq-kC-z7P" secondAttribute="leading" constant="100" id="929-Lw-fnq"/>
+                            <constraint firstItem="KZO-eW-SB0" firstAttribute="trailing" secondItem="BL9-9W-zqN" secondAttribute="trailing" id="IvJ-DE-KNW"/>
+                            <constraint firstItem="TKY-t6-ijT" firstAttribute="centerX" secondItem="UQK-mq-Ebx" secondAttribute="centerX" id="N0A-DS-uyV"/>
+                            <constraint firstItem="KZO-eW-SB0" firstAttribute="leading" secondItem="BdO-xt-WTI" secondAttribute="trailing" constant="7" id="O5s-Jd-TVn"/>
+                            <constraint firstItem="Mvi-lk-blT" firstAttribute="centerY" secondItem="BL9-9W-zqN" secondAttribute="centerY" id="U0c-B4-Ctv"/>
+                            <constraint firstItem="BL9-9W-zqN" firstAttribute="leading" secondItem="Mvi-lk-blT" secondAttribute="trailing" constant="8" id="Wc7-ae-xmb"/>
+                            <constraint firstItem="jBy-GB-MRd" firstAttribute="trailing" secondItem="uJc-wg-ajF" secondAttribute="trailingMargin" id="cmM-nm-MaI"/>
+                            <constraint firstItem="BdO-xt-WTI" firstAttribute="top" secondItem="0hq-kC-z7P" secondAttribute="top" constant="90" id="jh5-Mf-EoY"/>
+                            <constraint firstItem="BdO-xt-WTI" firstAttribute="leading" secondItem="Mvi-lk-blT" secondAttribute="leading" id="lHw-UU-fnc"/>
+                            <constraint firstItem="BL9-9W-zqN" firstAttribute="top" secondItem="KZO-eW-SB0" secondAttribute="bottom" constant="17" id="mPb-6p-vid"/>
+                            <constraint firstItem="UQK-mq-Ebx" firstAttribute="top" secondItem="BL9-9W-zqN" secondAttribute="bottom" constant="20" id="pkL-06-Hmh"/>
+                            <constraint firstItem="TKY-t6-ijT" firstAttribute="centerX" secondItem="uJc-wg-ajF" secondAttribute="centerX" id="qYE-eD-wR9"/>
+                            <constraint firstItem="BdO-xt-WTI" firstAttribute="leading" secondItem="uJc-wg-ajF" secondAttribute="leadingMargin" id="rFG-Mi-XcW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0hq-kC-z7P"/>
                     </view>

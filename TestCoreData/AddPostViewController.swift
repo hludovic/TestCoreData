@@ -30,13 +30,13 @@ class AddPostViewController: UIViewController {
             return
         }
         
-        let post = Post(context: AppDelegate.viewContex)
+        let post = Post(context: AppDelegate.viewContext)
         post.body = body
         post.title = title
         post.userId = 1
         post.id = Int16(Post.all.count + 1)
         
-        try? AppDelegate.viewContex.save()
+        try? AppDelegate.viewContext.save()
         
     }
     

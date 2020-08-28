@@ -22,6 +22,29 @@ class ViewController: UIViewController {
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         refreshControl.addTarget(self, action: #selector(pullToRefreshTableView), for: .valueChanged)
         tableView.addSubview(refreshControl)
+        
+    }
+    
+    func downloadPosts() {
+        PostWebService.getPosts { (success, result) in
+            guard success, let result = result else {
+                DispatchQueue.main.async {
+                }
+                return
+            }
+            
+            DispatchQueue.main.async {
+                for postResult in result {
+                    let post = Post(context: AppDelegate.viewContext)
+                    post.body = postResult.body
+                    post.title = postResult.title
+                    post.id = Int16(postResult.id)
+                    post.userId = Int16(postResult.userId)
+                    self.posts.append(post)
+                }
+                try? AppDelegate.viewContext.save()
+            }
+        }
     }
     
         
@@ -33,6 +56,7 @@ class ViewController: UIViewController {
     }
     
     @objc func pullToRefreshTableView(_ sender: AnyObject) {
+        downloadPosts()
         refreshData()
         refreshControl.endRefreshing()
     }
