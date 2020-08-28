@@ -8,14 +8,20 @@
 
 import UIKit
 
+protocol RefreshDelegate {
+    func refreshData()
+}
+
 class AddPostViewController: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var bodyTextField: UITextField!
     @IBOutlet weak var idLabel: UILabel!
     
+    var refreshDelegate: RefreshDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        idLabel.text = "Ajout du post numéro \(Post.all.count + 1)"
         // Do any additional setup after loading the view.
     }
     
@@ -28,7 +34,7 @@ class AddPostViewController: UIViewController {
         post.body = body
         post.title = title
         post.userId = 1
-        post.id = 1
+        post.id = Int16(Post.all.count + 1)
         
         try? AppDelegate.viewContex.save()
         
@@ -36,6 +42,8 @@ class AddPostViewController: UIViewController {
     
     @IBAction func savePostButton(_ sender: UIButton) {
         savePost()
+        refreshDelegate?.refreshData()
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func dismissButton(_ sender: UIButton) {
